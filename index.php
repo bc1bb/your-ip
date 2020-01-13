@@ -1,3 +1,9 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Your IP</title>
+</head>
+<body>
 <?php
 echo "<h1>Your IP</h1>\n";
 echo "<h2>Client</h2>\n";
@@ -17,9 +23,13 @@ echo "Request Method: ".$_SERVER['REQUEST_METHOD']."<br>\n";
 echo "<h2>Server</h2>\n";
 
 echo "Server's IP: ".$_SERVER['SERVER_ADDR']. " (Port: ". $_SERVER['SERVER_PORT']. ")". "<br>\n";
-echo "Server's hostname: ".gethostname()."<br>\n";
+echo "Server's hostname: ". gethostbyaddr($_SERVER['SERVER_ADDR']) ."<br>\n";
 echo "Software: ".$_SERVER['SERVER_SOFTWARE']."<br>\n";
 echo "CGI Version: ".$_SERVER['GATEWAY_INTERFACE']."<br>\n";
 echo "Protocol: ".$_SERVER['SERVER_PROTOCOL']."<br>\n";
 
 echo "<br><br>Use <a href=\"raw.php\">raw.php</a> to get raw output, don't forget you can use one of the following argument <code>host</code> or <code>ua</code>.<br>\n";
+?>
+<a href="https://github.com/jusdepatate/your-ip">GitHub</a> - <a href="https://git.beefs.tech/jusdepatate/your-ip">Gitea</a>.
+</body>
+</html>
