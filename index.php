@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Your IP</title>
+    <link rel="stylesheet" href="water.css">
 </head>
 <body>
 <?php
@@ -28,8 +29,8 @@ echo "Software: ".$_SERVER['SERVER_SOFTWARE']."<br>\n";
 echo "CGI Version: ".$_SERVER['GATEWAY_INTERFACE']."<br>\n";
 echo "Protocol: ".$_SERVER['SERVER_PROTOCOL']."<br>\n";
 
-echo "<br><br>Use <a href=\"raw.php\">raw.php</a> to get raw output, don't forget you can use one of the following argument <code>host</code> or <code>ua</code>.<br>\n";
+echo "<hr>Use <a href=\"raw.php\">raw.php</a> to get raw output, don't forget you can use one of the following argument <code>host</code>, <code>ua</code> or <code>method</code>.<br>\n";
 ?>
-<a href="https://github.com/jusdepatate/your-ip">GitHub</a> - <a href="https://git.beefs.tech/jusdepatate/your-ip">Gitea</a>.
+<a href="https://github.com/jusdepatate/your-ip">GitHub</a>.
 </body>
 </html>
